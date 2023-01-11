@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SalesWebMVC.Data;
+using SalesWebMVC.Services;
 using System.Configuration;
 
 namespace SalesWebMVC {
@@ -13,6 +14,7 @@ Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<SellerService>();
 
             var app = builder.Build();
 
