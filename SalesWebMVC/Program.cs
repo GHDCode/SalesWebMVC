@@ -23,6 +23,8 @@ Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql")));
                 app.UseHsts();
             }
 
+            SeedingService.Seed(app);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
