@@ -16,6 +16,7 @@ Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql")));
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<SellerService>();
 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
