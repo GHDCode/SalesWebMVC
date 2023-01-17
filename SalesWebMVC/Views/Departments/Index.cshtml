@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<SalesWebMVC.Models.Department>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Departments";
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-dark">Create New</a>
 </p>
 <table class="table">
     <thead>
