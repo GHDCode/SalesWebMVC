@@ -18,6 +18,7 @@ Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql")));
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<SellerService>();
             builder.Services.AddScoped<DepartmentService>();
+            builder.Services.AddScoped<SalesRecordService>();
 
 
             var app = builder.Build();
